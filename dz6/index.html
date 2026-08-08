@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Заголовок страницы -->
+    <title>Домашнее задание 5</title>
+</head>
+
+<body>
+
+    <h1>Форма регистрации</h1>
+
+    <!-- Основная форма -->
+    <form>
+
+        <!-- Группировка элементов формы -->
+        <fieldset>
+            <legend>Личная информация</legend>
+
+            <!-- Поле для имени -->
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <!-- Поле для электронной почты -->
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+
+            <!-- Поле для пароля -->
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+
+            <!-- Текстовое поле для комментария -->
+            <label for="comment">Комментарий:</label>
+            <br>
+            <textarea id="comment" name="comment" rows="5" cols="30"></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Выбор страны -->
+        <fieldset>
+            <legend>Дополнительная информация</legend>
+
+            <label for="country">Страна:</label>
+            <select id="country" name="country">
+                <option value="kazakhstan">Казахстан</option>
+                <option value="russia">Россия</option>
+                <option value="usa">США</option>
+                <option value="canada">Канада</option>
+                <option value="japan">Япония</option>
+            </select>
+
+            <br><br>
+
+            <!-- Кнопка отправки -->
+            <button type="submit">Отправить</button>
+
+            <!-- Кнопка сброса -->
+            <button type="reset">Сбросить</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
