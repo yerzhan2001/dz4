@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Домашнее задание 9</title>
+
+    <style>
+
+        /* =========================
+           ЗАДАНИЕ 1. ЕДИНИЦЫ ИЗМЕРЕНИЯ
+           ========================= */
+
+        /* px — точный размер элемента */
+        .px-box {
+            width: 400px;
+            height: 120px;
+            background-color: #d9eaff;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* em — размер относительно шрифта контейнера */
+        .em-box {
+            font-size: 20px;
+            padding: 1em;
+            margin: 1em;
+            background-color: #e2f5d7;
+        }
+
+        .em-text {
+            font-size: 1.5em;
+        }
+
+        /* rem — размер относительно корневого элемента html */
+        html {
+            font-size: 16px;
+        }
+
+        .rem-box {
+            width: 25rem;
+            padding: 1rem;
+            margin: 1rem;
+            background-color: #fff0c2;
+        }
+
+        .rem-title {
+            font-size: 2rem;
+        }
+
+        /* % — ширина относительно родительского элемента */
+        .percent-container {
+            width: 80%;
+            background-color: #eeeeee;
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        .percent-box {
+            width: 70%;
+            background-color: #cce5ff;
+            padding: 20px;
+        }
+
+
+        /* =========================
+           ЗАДАНИЕ 2. ЦВЕТОВЫЕ МОДЕЛИ
+           ========================= */
+
+        /* HEX — цвет задаётся шестнадцатеричным кодом */
+        .hex-box {
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 25px;
+            margin: 20px;
+        }
+
+        /* RGB — цвет задаётся значениями red, green, blue */
+        .rgb-box {
+            background-color: rgb(255, 200, 100);
+            color: rgb(40, 40, 40);
+            padding: 25px;
+            margin: 20px;
+        }
+
+        /* RGBA — последний параметр задаёт прозрачность */
+        .rgba-box {
+            background-color: rgba(120, 50, 200, 0.5);
+            color: rgba(0, 0, 0, 0.8);
+            padding: 25px;
+            margin: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Домашнее задание 9</h1>
+
+
+    <!-- =========================
+         ЗАДАНИЕ 1
+         ========================= -->
+
+    <h2>Задание 1: Единицы измерения</h2>
+
+    <!-- px — точные размеры -->
+    <div class="px-box">
+        <h3>Размеры в px</h3>
+        <p>
+            Этот блок имеет фиксированные ширину и высоту
+            в пикселях.
+        </p>
+    </div>
+
+
+    <!-- em — размер относительно шрифта родительского элемента -->
+    <div class="em-box">
+        <h3>Размеры в em</h3>
+
+        <p class="em-text">
+            Этот текст имеет размер 1.5em.
+            Размер зависит от шрифта контейнера.
+        </p>
+    </div>
+
+
+    <!-- rem — размер относительно корневого элемента html -->
+    <div class="rem-box">
+        <h3 class="rem-title">Размеры в rem</h3>
+
+        <p>
+            Здесь используются единицы rem,
+            которые зависят от размера шрифта элемента html.
+        </p>
+    </div>
+
+
+    <!-- % — размер относительно родительского элемента -->
+    <div class="percent-container">
+
+        <h3>Размеры в процентах</h3>
+
+        <div class="percent-box">
+            <p>
+                Ширина этого блока составляет 70%
+                от ширины родительского контейнера.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         ЗАДАНИЕ 2
+         ========================= -->
+
+    <h2>Задание 2: Цветовые модели</h2>
+
+
+    <!-- HEX — шестнадцатеричная цветовая модель -->
+    <div class="hex-box">
+
+        <h3>HEX</h3>
+
+        <p>
+            Цвет этого блока задан с помощью HEX:
+            #4a90e2.
+        </p>
+
+    </div>
+
+
+    <!-- RGB — цветовая модель RGB -->
+    <div class="rgb-box">
+
+        <h3>RGB</h3>
