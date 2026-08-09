@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Домашнее задание 8</title>
+
+    <style>
+
+        /* =========================
+           ЗАДАНИЕ 1. ТЕКСТОВЫЕ СВОЙСТВА
+           ========================= */
+
+        /* color — задаём цвет заголовков */
+        h1 {
+            color: darkblue;
+        }
+
+        /* font-size — задаём размер шрифта абзацев */
+        p {
+            font-size: 18px;
+        }
+
+        /* text-align — выравниваем заголовок по центру */
+        .center-title {
+            text-align: center;
+        }
+
+        /* font-weight — делаем абзац жирным */
+        .bold-text {
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           ЗАДАНИЕ 2. ФОНОВЫЕ СВОЙСТВА
+           ========================= */
+
+        /* background-color — задаём цвет фона */
+        .background-box {
+    background-color: lightblue;
+    background-image: url("photo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    margin: 20px 0;
+}
+
+
+        /* =========================
+           ЗАДАНИЕ 3. ОТСТУПЫ И РАМКИ
+           ========================= */
+
+        /* padding — внутренний отступ */
+        /* margin — внешний отступ */
+        /* border — рамка блока */
+        .box {
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid black;
+        }
+
+        .box-one {
+            background-color: lightgreen;
+        }
+
+        .box-two {
+            background-color: lightyellow;
+        }
+
+
+        /* =========================
+           ЗАДАНИЕ 4. РАЗМЕРЫ И ОТОБРАЖЕНИЕ
+           ========================= */
+
+        /* width и height — задаём ширину и высоту */
+        .size-box {
+            width: 300px;
+            height: 100px;
+
+            border: 3px solid darkblue;
+            padding: 15px;
+            margin: 20px 0;
+
+            /* overflow — скрываем содержимое,
+               которое выходит за границы блока */
+            overflow: hidden;
+        }
+
+        .scroll-box {
+            width: 300px;
+            height: 100px;
+
+            border: 3px solid darkred;
+            padding: 15px;
+            margin: 20px 0;
+
+            /* overflow: scroll — добавляем прокрутку */
+            overflow: scroll;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ЗАДАНИЕ 1. РАБОТА С ТЕКСТОВЫМИ СВОЙСТВАМИ -->
+
+    <h1>Домашнее задание 8</h1>
+
+    <!-- text-align: center — заголовок расположен по центру -->
+    <h2 class="center-title">Текстовые свойства CSS</h2>
+
+    <!-- font-size — размер текста 18px -->
+    <p>
+        Это обычный абзац с изменённым размером шрифта.
+    </p>
+
+    <!-- font-weight: bold — жирный текст -->
+    <p class="bold-text">
+        Это жирный абзац текста.
+    </p>
+
+
+    <!-- ЗАДАНИЕ 2. РАБОТА С ФОНОВЫМИ СВОЙСТВАМИ -->
+
+    <h2>Фоновые свойства</h2>
+
+    <div class="background-box">
+        <h3>Блок с фоновым изображением</h3>
+        <p>
+            У этого блока установлен цвет фона и фоновое изображение.
+        </p>
+    </div>
+
+
+    <!-- ЗАДАНИЕ 3. РАБОТА С ОТСТУПАМИ И РАМКАМИ -->
+
+    <h2>Отступы и рамки</h2>
+
+    <!-- padding, margin и border -->
+    <div class="box box-one">
+        <h3>Первый блок</h3>
+        <p>
+            Здесь используются внутренние и внешние отступы,
+            а также рамка.
+        </p>
+    </div>
+
+    <div class="box box-two">
+        <h3>Второй блок</h3>
+        <p>
+            Этот блок также имеет padding, margin и border.
+        </p>
+    </div>
+
+
+    <!-- ЗАДАНИЕ 4. РАЗМЕРЫ И OVERFLOW -->
+
+    <h2>Размеры и отображение</h2>
